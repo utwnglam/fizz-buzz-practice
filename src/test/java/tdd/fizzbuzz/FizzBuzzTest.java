@@ -21,4 +21,13 @@ public class FizzBuzzTest {
     String countOffString = fizzBuzzGame.countOff(count_off_order);
     assertThat(countOffString).isEqualTo("Buzz");
   }
+
+  @Test
+  public void should_count_off_number_multiple_of_7_return_Buzz() {
+    int count_off_order = 14;
+
+    FizzBuzz fizzBuzzGame = new FizzBuzz();
+    String countOffString = fizzBuzzGame.countOff(count_off_order);
+    assertThat(countOffString).isEqualTo("Whizz");
+  }
 }

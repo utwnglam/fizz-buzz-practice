@@ -6,6 +6,8 @@ public class FizzBuzz {
       return "Fizz";
     } else if (count_off_order % 5 == 0) {
       return "Buzz";
+    } else if (count_off_order % 7 == 0) {
+      return "Whizz";
     } else return Integer.toString(count_off_order);
   }
 }
