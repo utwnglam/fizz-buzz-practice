@@ -6,11 +6,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FizzBuzzTest {
   @Test
   public void should_count_off_number_normal_case_return_number() {
-    int count_off_order = 6;
+    int count_off_order = 2;
 
     FizzBuzz fizzBuzzGame = new FizzBuzz();
     String countOffString = fizzBuzzGame.countOff(count_off_order);
-    assertThat(countOffString).isEqualTo("Fizz");
+    assertThat(countOffString).isEqualTo("2");
   }
 
   @Test
