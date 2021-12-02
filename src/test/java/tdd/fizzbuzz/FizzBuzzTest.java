@@ -23,11 +23,38 @@ public class FizzBuzzTest {
   }
 
   @Test
-  public void should_count_off_number_multiple_of_7_return_Buzz() {
+  public void should_count_off_number_multiple_of_7_return_Whizz() {
     int count_off_order = 14;
 
     FizzBuzz fizzBuzzGame = new FizzBuzz();
     String countOffString = fizzBuzzGame.countOff(count_off_order);
     assertThat(countOffString).isEqualTo("Whizz");
+  }
+
+  @Test
+  public void should_count_off_number_multiple_of_3_and_5_return_FizzBuzz() {
+    int count_off_order = 15;
+
+    FizzBuzz fizzBuzzGame = new FizzBuzz();
+    String countOffString = fizzBuzzGame.countOff(count_off_order);
+    assertThat(countOffString).isEqualTo("FizzBuzz");
+  }
+
+  @Test
+  public void should_count_off_number_multiple_of_3_and_7_return_Whizz() {
+    int count_off_order = 21;
+
+    FizzBuzz fizzBuzzGame = new FizzBuzz();
+    String countOffString = fizzBuzzGame.countOff(count_off_order);
+    assertThat(countOffString).isEqualTo("FizzWhizz");
+  }
+
+  @Test
+  public void should_count_off_number_multiple_of_5_and_7_return_Whizz() {
+    int count_off_order = 35;
+
+    FizzBuzz fizzBuzzGame = new FizzBuzz();
+    String countOffString = fizzBuzzGame.countOff(count_off_order);
+    assertThat(countOffString).isEqualTo("BuzzWhizz");
   }
 }
